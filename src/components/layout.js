@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
+import { Link, useStaticQuery, graphql } from 'gatsby'
 import {
   container,
   heading,
@@ -7,7 +7,8 @@ import {
   navLinkItem,
   navLinkText
 } from './layout.module.css'
-import { Link, useStaticQuery, graphql } from 'gatsby'
+
+
 const Layout = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
   query {
